@@ -1,7 +1,7 @@
-# OmniProt
+# CorePredX
 ### Proteome-Encoded Growth Prediction Framework for **Rhodopseudomonas palustris** CGA009
 
-OmniProt is a full analytical framework that integrates label-free quantitative proteomics with machine-learning–based prediction to identify mechanistic drivers of microbial growth under diverse lignin-derived substrate conditions.
+CorePredX is a full analytical framework that integrates label-free quantitative proteomics with machine-learning–based prediction to identify mechanistic drivers of microbial growth under diverse lignin-derived substrate conditions.
 
 This repository supports the manuscript:
 **“Machine Learning Resolves Proteome-Encoded Growth Predictors of *Rhodopseudomonas palustris* CGA009 on Lignin Aromatics.”**
@@ -10,8 +10,8 @@ This repository supports the manuscript:
 
 ## 🌐 Overview
 
-Microbial lignin catabolism requires extensive metabolic flexibility, yet the quantitative proteomic determinants of growth remain unknown. OmniProt tests whether microbial growth outcomes across 16 substrate × oxygen conditions can be predicted directly from proteome composition—and whether feature importance can resolve core vs. adaptive biological drivers.
-![OmniProt Overview](assets/Fig1_Overview.jpg)
+Microbial lignin catabolism requires extensive metabolic flexibility, yet the quantitative proteomic determinants of growth remain unknown. CorePredX tests whether microbial growth outcomes across 16 substrate × oxygen conditions can be predicted directly from proteome composition—and whether feature importance can resolve core vs. adaptive biological drivers.
+![CorePredX Overview](assets/Fig1_Overview.jpg)
 
 The framework provides:
 
@@ -31,7 +31,7 @@ The framework provides:
 ## 📁 Repository Layout
 
 ```
-OmniProt/
+CorePredX/
 │
 ├── data/                     # Input datasets
 │   ├── proteomics_data.xlsx
@@ -51,7 +51,7 @@ OmniProt/
 ├── functions_repo.py         # Function library + utilities
 ├── Analyze_Results_and_PlotFigures.ipynb
 ├── HyperParameterTuning.ipynb
-├── OmniProt.yml              # Conda environment specification
+├── CorePredX.yml              # Conda environment specification
 │
 └── submit_batch_job.sh       # SLURM template for HPC execution
 ```
@@ -92,8 +92,8 @@ Key stages include:
 ### Create the environment:
 
 ```bash
-conda env create -f OmniProt.yml
-conda activate OmniProt
+conda env create -f CorePredX.yml
+conda activate CorePredX
 ```
 
 ### Run the full pipeline:
@@ -164,7 +164,7 @@ This configuration matches runtime (~24–48 hr on full dataset).
 
 ## ⚙️ Key Dependencies
 
-Major modules (specified in `OmniProt.yml`):
+Major modules (specified in `CorePredX.yml`):
 
 - Python ≥ 3.10
 - PyTorch
@@ -186,7 +186,7 @@ Major modules (specified in `OmniProt.yml`):
 
 ---
 
-## 🧪 OmniProt enables:
+## 🧪 CorePredX enables:
 
 - proteome-level growth prediction
 - mechanistic interpretation
